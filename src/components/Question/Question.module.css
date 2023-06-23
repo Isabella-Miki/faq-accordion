@@ -1,0 +1,55 @@
+:root {
+  --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --Soft-red: hsl(14, 88%, 65%);
+  --Soft-violet: hsl(273, 75%, 66%);
+  --Soft-blue: hsl(240, 73%, 65%);
+  --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --Dark-grayish-blue: hsl(240, 6%, 50%);
+  --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+.questionWrapper {
+  border-bottom: 1px solid var(--Light-grayish-blue);
+  padding: 1rem 0rem;
+  width: 30vw;
+}
+
+.question:hover {
+  color: var(--Soft-red);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.question + .question {
+  margin-top: 5rem;
+}
+
+.question {
+  color: var(--Very-dark-grayish-blue);
+  transition: 0.5s;
+}
+
+.answer {
+  display: none;
+}
+
+.active {
+  color: var(--Dark-grayish-blue);
+  color: var(--Very-dark-desaturated-blue);
+  display: initial;
+}
+
+.arrowClose {
+  margin-left: 1ch;
+  width: 2ch;
+  height: 1ch;
+  transition: 0.5s;
+}
+
+.arrowOpen {
+  margin-left: 1ch;
+  width: 2ch;
+  height: 1ch;
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
